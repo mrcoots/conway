@@ -17,11 +17,18 @@ namespace Conway
                 {true, false, true, true },
                 {false, true, false, true }
             };
-            for (int k = 0; k < 10; k++)
+            for (int k = 0; k < 4; k++)
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i <4; i++)
                 {
+                    if (grid[k, i] == true)
+                        {
                     Console.Write("X");
+                        }
+                    else if (grid[k, i] == false)
+                    {
+                        Console.Write(" ");
+                    }
                 }
                 Console.WriteLine();
             }
